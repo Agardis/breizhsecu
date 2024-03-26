@@ -1,7 +1,7 @@
 <?php
-$CONFIG['HOST']="localhost";
-$CONFIG['BDD']="bzhsec";
-$CONFIG['LOGIN']="root";
-$CONFIG['MDP']="";
+$CONFIG['HOST']="mysql";
+$CONFIG['BDD']="breizhsecuDB";
+$CONFIG['LOGIN']="breizhman";
+$CONFIG['MDP']="breizhmanPassword";
 
 ?>
