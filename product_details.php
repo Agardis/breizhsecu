@@ -5,7 +5,9 @@ include("admin/inc/bdd_connect.php");
 include("inc/utils.php");
 if(isset($_GET['poster'])){
 
-$sql="insert into avis values ('','".$_SESSION['iduser']."', '".$_GET['id']."', '".date('Y/m/d')."', '".addslashes($_GET['titreavis'])."', '".addslashes($_GET['texteavis'])."')";
+$sql="insert into avis ( idcompte, idproduit, date, titre, texte) values ('".$_SESSION['iduser']."', '".$_GET['id']."', '".date('Y/m/d')."', '".addslashes($_GET['titreavis'])."', '".addslashes($_GET['texteavis'])."')";
+echo $sql;
+
 $reponse = $bdd->query($sql);
 
 }
