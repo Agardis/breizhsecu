@@ -18,6 +18,16 @@ class NewUser {
     public Role $role;
 }
 
+class updatePassword {
+    public int $userId;
+    public string $password;
+}
+
+class Token {
+    public int $userId;
+    public string $token;
+}
+
 enum Role: int {
     case USER = 0;
     case ADMIN = 1;
